@@ -1,0 +1,112 @@
+@keyframes btnAnim {
+  0%{
+    transform: translateY(600px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+#loginBody{
+  color: black;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background: linear-gradient(to bottom, #05ffff41,#abd5ff6b);
+  height: 90vh;
+  min-height: max-content;
+}
+#logoCont{
+  display: flex;
+  justify-content: center;
+  font-size: clamp(150px,10vw,200px);
+}
+#login-title{
+  text-align: center;
+}
+#login-title p:first-child{
+  font-size: clamp(35px,5vw,45px);
+  margin-top: 0%;
+}
+
+#login-title p:last-child{
+  font-size: clamp(20px,3vw,30px);
+}
+
+#collegs{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+  gap: 15px;
+}
+ .link{
+  width: 15%;
+  min-width: 200px;
+  margin-top: 2vh;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.558);
+  box-shadow: 3px 2px 10px rgb(0, 0, 0) ;
+  transition: 0.2s ease-in;
+  color: rgb(34, 34, 34);
+  text-decoration: none;
+  animation: btnAnim 0.3s ease-in;
+}
+
+@media screen and (hover:hover){
+  .link:hover{
+  cursor: pointer;
+  transform:translateY(-10px);
+  border: 2px solid rgb(255, 255, 255);
+  color: aliceblue;
+}}
+
+.logoBtn{
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  font-size: clamp(40px,7vw,60px);
+  padding-bottom: 1vh;
+  margin-top: 1.5vh;
+}
+.link div p{
+  margin-top: 0vh;
+  margin-bottom: 1.5vh;
+  font-size: clamp(15px,2.5vw,25px);
+}
+#guest{
+  margin-top: 4vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#enterAs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1vh;
+}
+#enterAs::after,
+#enterAs::before{
+  content: "";
+  flex: 1;
+  height: 2px;
+  background-color: black;
+}
+#enterAs p{
+  margin: 0 22px;
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: clamp(12px,2vw,25px);
+}
