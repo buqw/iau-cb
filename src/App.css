@@ -233,7 +233,7 @@ footer .cont{
   background-color:  rgb(142, 152, 169);
   border: none;
   box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.642);
-  font-size: clamp(12px,2vw,20px);
+  font-size: clamp(16px,2vw,22px);
   padding-left: 1vw;
 }
 .cont input::placeholder{
