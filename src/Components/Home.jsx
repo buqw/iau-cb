@@ -11,7 +11,7 @@ export default function Home(props){
     }
 
     const send = ()=>{
-        if(inpValue == ""){return;}
+        if(inpValue === ""){return;}
         const message = {
             value:inpValue,
             sender:"user"
@@ -51,7 +51,7 @@ export default function Home(props){
             <main>
                 <div id="messagesCont">
                     {messages.length >0 && (messages.map(child =>{
-                        if(child.sender == "user"){
+                        if(child.sender === "user"){
                             return(
                                 <div className="userMessage">
                                     <p>{child.value}</p>
