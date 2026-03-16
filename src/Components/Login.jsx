@@ -25,10 +25,7 @@ export default function Login(){
         name:"Business",
         logo:<FaBusinessTime />
     },
-    {
-        name:"Health",
-        logo:<GiHealthNormal />
-    }]
+]
 
     return(
         <div id="loginBody">
@@ -36,7 +33,7 @@ export default function Login(){
                 <GoDependabot />
             </div>
             <div id="login-title">
-                <p>IAU Chatbot</p>
+                <p>Guide Mate</p>
                 <p>Select your college</p>
             </div>
             <div id="collegs">
