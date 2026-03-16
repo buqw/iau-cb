@@ -3,7 +3,6 @@ import { FaCode } from "react-icons/fa6";
 import { MdEngineering } from "react-icons/md";
 import { MdLocalPharmacy } from "react-icons/md";
 import { FaBusinessTime } from "react-icons/fa";
-import { GiHealthNormal } from "react-icons/gi";
 import { IoMdPerson } from "react-icons/io";
 
 import { Link } from "react-router-dom";
