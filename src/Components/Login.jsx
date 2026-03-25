@@ -3,7 +3,7 @@ import { IoMdPerson } from "react-icons/io";
 
 import { Link } from "react-router-dom";
 export default function Login(){
-    const colleges = ["CCSIT","Business","Pharamcy","CCSIT","Business","Pharamcy","CCSIT","Business","Pharamcy","CCSIT","Business","Pharamcy",]
+    const colleges = ["CCSIT","Business","Pharamacy","Public Health","Medicine","Dentistry","Nusring","Engineering","Science","Design","Arts","Sharia And Law",]
 
     return(
         <div id="loginBody">
@@ -12,7 +12,7 @@ export default function Login(){
             </div>
             <div id="login-title">
                 <p>Guide Mate</p>
-                <p>Select your college</p>
+                <p id="aa">Select your college</p>
             </div>
             <div id="collegs">
                 {colleges.map(child =>{

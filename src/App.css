@@ -8,7 +8,7 @@
 #logoCont{
   display: flex;
   justify-content: center;
-  font-size: clamp(150px,10vw,200px);
+  font-size: clamp(110px,10vw,200px);
 }
 #login-title{
   text-align: center;
@@ -16,10 +16,12 @@
 #login-title p:first-child{
   font-size: clamp(35px,5vw,45px);
   margin-top: 0%;
+  margin-bottom: 0%;
 }
 
 #login-title p:last-child{
   font-size: clamp(20px,3vw,30px);
+  margin-top: 0%;
 }
 
 #collegs{
@@ -30,22 +32,22 @@
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
-  align-items: center;
-  gap: 35px;
-
+  gap: 10px;
 }
  .link{
-  width: 25%;
-  min-width: 70px;
+  width: 30%;
+  min-width: 100px;
   max-width: 200px;
-
+  margin-top: 2vh;
+  margin-left: 10px;
+  margin-right: 10px;
   height: max-content;
   display: flex;
   flex-direction: column;
   align-items: center;  
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.135);
-  box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.341) ;
+  box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.343) ;
   transition: 0.2s ease-in;
   color: rgb(34, 34, 34);
   text-decoration: none;
@@ -60,7 +62,7 @@
   align-items: center;  
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.135);
-  box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.342) ;
+  box-shadow: 3px 2px 10px rgb(0, 0, 0) ;
   transition: 0.2s ease-in;
   color: rgb(34, 34, 34);
   text-decoration: none;
@@ -93,7 +95,7 @@
 
 .link div p{
   margin: 0.8vh;
-  font-size: clamp(15px,2.5vw,25px);
+  font-size: clamp(12px,2.5vw,25px);
   font-weight: 500;
 }
 #guest{

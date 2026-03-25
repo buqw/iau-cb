@@ -2,6 +2,7 @@ import { GoDependabot } from "react-icons/go";
 import { IoSend } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useEffect } from "react";
 export default function Home(props){
     const [messages,setMessages] = useState([]);
     const [inpValue,setInpValue] = useState("");
@@ -26,6 +27,10 @@ export default function Home(props){
         setInpValue("");
         setMessages(prev => [reply,...prev])
     }
+    useEffect(() => {
+        const el = document.getElementById("messagesCont");
+        el.scrollTop = el.scrollHeight;
+    }, [messages]);
     return(
         <>
             <nav>
