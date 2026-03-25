@@ -1,12 +1,3 @@
-@keyframes btnAnim {
-  0%{
-    transform: translateY(600px);
-  }
-  100%{
-    transform: translateY(0px);
-  }
-}
-
 #loginBody{
   color: black;
   padding-top: 5vh;
@@ -38,11 +29,29 @@
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-around;
-  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+
 }
  .link{
-  width: 15%;
+  width: 25%;
+  min-width: 70px;
+  max-width: 200px;
+
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.135);
+  box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.341) ;
+  transition: 0.2s ease-in;
+  color: rgb(34, 34, 34);
+  text-decoration: none;
+}
+
+.guestLink{
   min-width: 200px;
   margin-top: 2vh;
   height: max-content;
@@ -51,11 +60,11 @@
   align-items: center;  
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.135);
-  box-shadow: 3px 2px 10px rgb(0, 0, 0) ;
+  box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.342) ;
   transition: 0.2s ease-in;
   color: rgb(34, 34, 34);
   text-decoration: none;
-  animation: btnAnim 0.3s ease-in;
+
 }
 
 @media screen and (hover:hover){
@@ -64,7 +73,14 @@
   transform:translateY(-10px);
   border: 2px solid rgb(255, 255, 255);
   color: aliceblue;
-}}
+}
+  .guestLink:hover{
+    cursor: pointer;
+    transform:translateY(-10px);
+    border: 2px solid rgb(255, 255, 255);
+    color: aliceblue;    
+  }
+}
 
 .logoBtn{
   height: 70%;
@@ -74,16 +90,24 @@
   padding-bottom: 1vh;
   margin-top: 1.5vh;
 }
+
 .link div p{
-  margin-top: 0vh;
-  margin-bottom: 1.5vh;
+  margin: 0.8vh;
   font-size: clamp(15px,2.5vw,25px);
+  font-weight: 500;
 }
 #guest{
   margin-top: 4vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#guest p{
+  margin-top: 0.5vh;
+  margin-bottom: 1.5vh;
+  font-size: clamp(15px,2.5vw,25px);  
+  font-weight: 500;
+
 }
 
 #enterAs{
@@ -172,7 +196,7 @@ nav{
   background-color: rgba(211, 66, 66, 0.981);
   width: 40%;
   min-width: 70px;
-  height: 3vh;
+  height: 60%;
   border-radius: 7px;
   cursor: pointer;
   font-size: clamp(12px,2vw,20px);

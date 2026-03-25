@@ -7,24 +7,7 @@ import { IoMdPerson } from "react-icons/io";
 
 import { Link } from "react-router-dom";
 export default function Login(){
-    const colleges = [
-    {
-        name: "CCSIT",
-        logo:<FaCode />,
-    },
-    {
-        name:"Engineering",
-        logo:<MdEngineering />
-    },
-    {
-        name:"Pharmacy",
-        logo:<MdLocalPharmacy />
-    },
-    {
-        name:"Business",
-        logo:<FaBusinessTime />
-    },
-]
+    const colleges = ["CCSIT","Business","Pharamcy","CCSIT","Business","Pharamcy","CCSIT","Business","Pharamcy","CCSIT","Business","Pharamcy",]
 
     return(
         <div id="loginBody">
@@ -39,11 +22,8 @@ export default function Login(){
                 {colleges.map(child =>{
                     return(          
                         <Link className="link" to="home">
-                                <div className="logoBtn">
-                                    {child.logo}
-                                </div>
                                 <div>
-                                    <p>{child.name}</p>
+                                    <p>{child}</p>
                                 </div>
                         </Link>    
                     )
@@ -55,7 +35,7 @@ export default function Login(){
                     <p>Enter As Guest</p>
                 </div>
                 <div>
-                    <Link className="link" to="home">
+                    <Link className="guestLink" to="home">
                             <div className="logoBtn">
                                 {<IoMdPerson />}
                             </div>
